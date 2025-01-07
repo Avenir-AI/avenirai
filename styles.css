@@ -20,6 +20,7 @@ body {
 
 h1, h2 {
     font-size: 2rem;
+    line-height: 2rem;
     font-family: "League Spartan";
 }
 
@@ -247,8 +248,11 @@ header nav a:hover {
 
 .stats h2 {
     font-family: 'League Spartan', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 30px;
+}
+.stats p {
+    margin-bottom: 40px;
 }
 
 .stats .grid {
@@ -314,6 +318,11 @@ h3 {
     width: 40%;
     max-width: 600px;
 }
+.ft {
+    padding: 20px;
+    background: var(--federal-blue);
+    color: var(--white);
+}
 footer {
     padding: 20px;
     background: var(--federal-blue);
@@ -334,12 +343,42 @@ footer hr {
 }
 
 footer ul {
+    padding: 0;
     list-style-type: none;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+.social-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.social {
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--federal-blue);
+    background: var(--carolina-blue);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: ease all .6s !important;
+}
+.social:hover {
+    background: rgb(111, 159, 187);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: ease all .6s !important;
+}
+.footerflex li a {
+    color: var(--carolina-blue);
+    text-decoration: none;
 }
 
 /* Section Titles */
@@ -361,11 +400,13 @@ footer p {
     line-height: 1.6;
 }
 
+.who-we-are {
+    padding: 100px 20px;
+}
+
 .who-we-are .inner {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     gap: 10px;
     justify-content: space-evenly;
     align-items: stretch;
@@ -378,14 +419,16 @@ footer p {
     border-radius: 10px;
     margin: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: ease all .6s !important;
     width: 33%;
 
 }
 
 .info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) !important;
+    background: rgb(111, 159, 187);
+    transition: ease all .6s !important;
+    
 }
 
 .info-title {
@@ -439,8 +482,210 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f561a6",endCo
     transform: scale(1.05);
 }
 
+.main-box {
+    padding: 60px 20px;
+}
+.main-box h1 {
+    font-size: 3rem;
+}
+.main-box img {
+    width: 50%;
+    max-width: 600px;
+}
+.platform-card-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-grow: 1;
+}
 
+.platform-card {
+    padding: 20px;
+    width: 45%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: ease all .6s !important;
+
+}
+
+.platform-card:hover {
+    transform: translateY(-5px) !important;
+    background: #ddd;
+    transition: ease all .6s !important;
+    
+}
+
+/* Marquee container */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Each text or card */
+.loop-text {
+    white-space: nowrap;
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* Marquee content (scrolling items) */
+.marquee-content {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 20s linear infinite;
+}
+
+.reverse-marquee {
+    display: flex;
+    gap: 20px;
+    animation: scroll-right 20s linear infinite;
+}
+
+/* Animation keyframes with starting position */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-25%);  /* Start already partway through */
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Animation keyframes with starting position */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);  /* Start already partway through */
+    }
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+
+.data-card {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: ease all .6s !important;
+
+}
+
+.data-card img {
+    padding: 10px;
+    height: 60px;
+    transition: ease all .6s;
+    filter: grayscale(1) contrast(1) brightness(1);
+    -webkit-filter: grayscale(100%);
+}
+  
+.data-card img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    transition: ease all .6s;
+    cursor: pointer;
+}
+
+.vert-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-grow: 1;
+}
+.vert-card {
+    width: 33%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: .9;
+    transition: ease all .6s !important;
+
+}
+
+.vert-card:hover {
+transform: translateY(-5px) !important;
+opacity: 1;
+transition: ease all .6s !important;
+
+}
+.vert-card p {
+    margin: 0;
+    padding: 10px 10px 30px 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #777;
+    font-weight: 300;
+}
+.vert-card h3 {
+    margin: 0;
+    padding: 30px 10px 10px 10px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;   
+}
+.vert-card img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    object-fit:cover;
+    height: 250px;
+}
 @media (max-width: 768px) {
+    .platform-card {
+        width: 100%;
+    
+    }
+    .footerflex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerflex h1 {
+        text-align: center;
+    }
+    .social-cont {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .half {
+        margin-bottom: 50px;
+    }
+    .half, .fourty {
+        width: 100%;
+    }
+    .stats .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }    
+    .contact-us {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 10px 0px 10px;
+    }
+    .contact-us img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .summary {
+        text-align: center;
+    }
     .summary, .what-we-do, .what-we-do .card {
         flex-direction: column;
     }
@@ -484,6 +729,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f561a6",endCo
     }
     .info-card {
         width: auto;
+    }
+    .vert-cards {
+        flex-direction: column;
+    }
+    .vert-card {
+        width: 100%;
     }
 
 }
