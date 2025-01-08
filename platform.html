@@ -17,17 +17,19 @@
 </head>
 <body>
     <header>
-        <div><img src="assets/avenir2.png"></div>
+        <div><a href="index.html"><img src="assets/avenir2.png"></a></div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact" class="special">Contact</a>
+            <a href="#overview">Overview</a>
+            <a href="#tech">Technology</a>
+            <a href="#data">Data Sources</a>
+            <a href="#recs">Recommendations</a>
+            <a href="#demo" class="special">Book a Demo</a>
         </nav>
     </header>
 
-    <section class="section contact-us main-box" data-aos="fade-up" data-aos-duration="1000">
+    <section id="overview" class="section contact-us main-box" data-aos="fade-up" data-aos-duration="1000">
         <div style="width: 70%">
-            <h1>The Avenir Platform</h1>
+            <h1>The Avenir AI Platform</h1>
             <p>The future is proactive benefits management. Let our 24/7 AI workers take care of your benefits administration with unmatched speed, accuracy, and reliability, so you can focus on what truly matters - growth, performance, and well-being.</p>
             <button class="contact-button">Book a demo</button>
         </div>
@@ -56,7 +58,7 @@
         </div>
     </section>
 
-    <section class="stats">
+    <section class="stats" id="tech">
         <h2>AI Expert Workers</h2>
         <p>Seamlessly automate benefits tasks and drive smarter decisions with specialized AI agents tailored for compliance, claims analysis, enrollment, and personalized recommendations.
         </p>
@@ -67,6 +69,46 @@
             <div class="platform-card"><h3><i style="color: #a167a5ff;" class="fas fa-comment"></i> Recommendations AI Agent</h3><p>Monitors top cost drivers and trends in your organization to generate deployable workplace content (e.g., trainings, email campaigns, surveys) to refine your benefits strategy.</p></div>    
         </div>
    </section>
+
+   <section class="stats" style="background: white; width: 100%; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 0px 80px 0px; margin: 0;">
+        <h2>Why AI Workers?</h2>
+        <div class="compare-cont">
+            <div class="compare-card" style="border: 1px solid red;">
+                <h2 style="color: red; background: rgb(255, 223, 223);">Without AI</h2>
+                <p>How everyone else does it...</p>
+                <div class="leftalign">
+                    <span class="num" style="background: red;">1</span> Waste time & energy on redundant tasks<br/><br/>
+                    <span class="num" style="background: red;">2</span> Struggle to identify insights & trends<br/><br/>
+                    <span class="num" style="background: red;">3</span> Miss opportunities to optimize costs & offerings<br/><br/>
+                    <span class="num" style="background: red;">4</span> Overwhelmed by dealing with messy large datasets<br/><br/>
+                </div>
+                <div class="banner" style="border: 1px solid red; background: rgb(255, 223, 223);">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px;">
+                        <i style="color: red;" class="fas fa-face-frown"></i>
+                        <h3 style="color: red;">No fun</h3>
+                    </div>
+                    <p>Have very little fun & takes way too much effort, cost, and time for the little value you get</p>
+                </div>
+            </div>
+            <div class="compare-card" style="border: 1px solid green;">
+                <h2 style="color: green; background:  rgb(196, 255, 196);">With AI Workers</h2>
+                <p>How we do it...</p>
+                <div class="leftalign">
+                    <span class="num" style="background: green;">1</span> Chat with AI workers who get the info you need 24/7<br/><br/>
+                    <span class="num" style="background: green;">2</span> Grab a coffee as our AI analyzes all the data in seconds<br/><br/>
+                    <span class="num" style="background: green;">3</span> Discover actionable insights you can use immediately<br/><br/><br/><br/>
+                </div>
+                <div class="banner" style="border: 1px solid green; background: rgb(196, 255, 196);">
+                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px;">
+                        <i style="color: green;" class="fas fa-face-smile"></i>
+                        <h3 style="color: green;">Very fun</h3>
+                    </div>
+                    <p>Achieve amazing results in optimizing your benefits strategy that your employees will love</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
    <section class="hero" style="background: blue;">
     <div class="hero-content" style="align-items: center;">
@@ -89,7 +131,7 @@
     </div>
 </section>
 
-    <section class="section who-we-are">
+    <section id="data" class="section who-we-are" style="padding-top: 40px !important;">
         <h2 class="section-title">20+ Data Sources</h2>
         <p class="section-description">
             From employee engagement surveys and public benefits reports to industry benchmarks and real-time compliance updates, our data ensures accurate, relevant, and expert insights.</p>
@@ -137,7 +179,7 @@
 
     </section>
 
-    <section class="section summary" style="text-align: center;" id="about">
+    <section id="recs" class="section summary" style="text-align: center;" id="about">
         <div class="content">
             <h2>Recommendations You Can Trust, Recommendations You Can Use</h2>
             <p>Avenir AI's personalized recommendations are built on real-time analytics and tailored to meet the needs of various workplace initiatives. From benefits strategies to employee engagement solutions, we make it easy for HR leaders to deploy practical and impactful solutions that drive measurable results.</p>
@@ -163,7 +205,7 @@
 
         </div>
     </section>
-    <section class="section contact-us" id="contact">
+    <section id="demo" class="section contact-us" id="contact">
             <h2>Speak To A Specialist</h2>
             <p>A specialist is ready to speak to you regarding your interests and find the solutions that are right for you.</p>
             <button class="contact-button">Email Us</button>

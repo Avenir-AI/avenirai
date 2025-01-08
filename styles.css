@@ -483,7 +483,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f561a6",endCo
 }
 
 .main-box {
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 .main-box h1 {
     font-size: 3rem;
@@ -640,6 +640,50 @@ transition: ease all .6s !important;
     object-fit:cover;
     height: 250px;
 }
+
+.compare-cont {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 20px;
+    flex-grow: 1;
+}
+.leftalign {
+    text-align: left;
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+.num {
+    color: white;
+    border-radius: 50%;
+    padding: 5px 9px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+.compare-card .banner {
+    border-radius: 10px;
+    padding: 10px;
+}
+.compare-card {
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.compare-card h2 {
+    padding: 5px 40px;
+    width: auto;
+    border-radius: 10px;
+}
+.compare-card h3 {
+    padding: 0;
+    margin: 0;
+
+}
+
 @media (max-width: 768px) {
     .platform-card {
         width: 100%;
@@ -735,6 +779,12 @@ transition: ease all .6s !important;
     }
     .vert-card {
         width: 100%;
+    }
+    .compare-cont {
+        flex-direction: column;
+    }
+    .compare-card {
+        width: auto;
     }
 
 }
