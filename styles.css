@@ -482,6 +482,55 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f561a6",endCo
     transform: scale(1.05);
 }
 
+.team-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.team-overlay {
+    text-align: left;
+    background: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    margin: 10px 15px;
+}
+.team-overlay h3, p {
+    margin: 0;
+    padding: 0;
+}
+.team-cont img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    opacity: .9;
+    transition: ease all .6s !important;
+}
+
+.team-cont img:hover {
+    transform: scale(1.05) !important;
+    opacity: 1;
+    transition: ease all .6s !important;
+    
+}
+
+.gradtext {
+    font-size: 3rem;
+    line-height: 3rem;
+    background: rgb(255,91,168);
+    background: -moz-linear-gradient(90deg, rgba(255,91,168,1) 0%, rgba(80,86,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,91,168,1) 0%, rgba(80,86,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,91,168,1) 0%, rgba(80,86,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5ba8",endColorstr="#5056ff",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .main-box {
     padding: 70px 20px;
 }
