@@ -16,6 +16,8 @@ body {
     color: var(--federal-blue);
     line-height: 1.6;
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -273,8 +275,8 @@ header.nav-open nav {
 }
 
 .summary img, .what-we-do img {
-    flex: 1 1 40%;
-    max-width: 600px;
+    flex: 1 1 35%;
+    max-width: 500px;
 }
 
 .summary .content, .what-we-do .content {
@@ -838,13 +840,19 @@ transition: ease all .6s !important;
         justify-content: center;
         margin-bottom: 20px;
     }
+    .hero {
+        padding: 0;
+        margin: 0;
+    }
     .hero-content {
+        padding: 20px 20px;
+        margin: 0;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
     .half {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     .half, .fourty {
         width: 100%;
