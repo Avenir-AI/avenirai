@@ -597,8 +597,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f561a6",endCo
 }
 
 .gradtext {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
     margin-bottom: 0;
     background: rgb(255,91,168);
     background: -moz-linear-gradient(90deg, rgba(255,91,168,1) 0%, rgba(80,86,255,1) 100%);
@@ -816,6 +816,12 @@ transition: ease all .6s !important;
 }
 
 @media (max-width: 768px) {
+    .mobilemargin {
+        padding: 100px 0px !important;
+    }
+    .mobilemargin p {
+        margin-bottom: 40px;
+    }
     .contact-cont {
         padding: 10px;
         flex-direction: column;
