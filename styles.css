@@ -279,8 +279,13 @@ header.nav-open nav {
     gap: 30px;
 }
 
-.summary .computer, .what-we-do img {
-    width: 35%;
+.summary .computer {
+    width: 40%;
+    max-width: 500px;
+}
+
+.what-we-do img {
+    flex: 1 1 35%;
     max-width: 500px;
 }
 
@@ -816,6 +821,10 @@ transition: ease all .6s !important;
 }
 
 @media (max-width: 768px) {
+    .summary .computer {
+        width: 100%;
+        height: auto;
+    }
     .mobilemargin {
         padding: 100px 0px !important;
     }
@@ -900,10 +909,6 @@ transition: ease all .6s !important;
     .hero button {
         font-size: 0.9rem;
         padding: 10px 20px;
-    }
-    .summary .computer {
-        width: 100%;
-        height: auto;
     }
     .content {
         width: 100% !important;
